@@ -54,28 +54,7 @@
         })
     }
 
-    $.ajax({
-        url: './../controllers/xue_userController.php',
-        type: 'post',
-        data: {},
-        success: function (e) {
-            var obj = JSON.parse(e);
-            var str = '';
-            for (var i in obj) {
-                str += `<tr>
-                    <td>${obj[i].student_name}</td>
-                    <td>${obj[i].student_num}</td>
-                    <td><a href="#">个人信息</a></td>
-                    <td>${obj[i].student_major_state}</td>
-                </tr>`;
-                console.log(obj);
-                $('#r_fbox').html(str);
-            }
-        },
-        error() {
-            console.log('error');
-        }
-    })
+    
 </script>
 
 </html>
