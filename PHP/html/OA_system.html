@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,62 +25,35 @@
         }
     </style>
 </head>
+
 <body class="layui-layout-body">
-<div class="layui-layout layui-layout-admin">
-    <div class="layui-header layui-bg-cyan">
-        <!-- 左边LOGO -->
-        <div class="layui-logo layui-bg-black">蓝欧科技</div>
-        <ul class="layui-nav layui-layout-left left">
-            <span>班级：XAH190402</span>
-            <span>&emsp;</span>
-            <span>讲师：刘建成</span>
-            <span>&emsp;</span>
-            <span>职业规划老师：田帅</span>
-        </ul>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header layui-bg-cyan">
+            <!-- 左边LOGO -->
+            <div class="layui-logo layui-bg-black">蓝欧科技</div>
+            <ul class="layui-nav layui-layout-left left">
+                <span>班级：XAH190402</span>
+                <span>&emsp;</span>
+                <span>讲师：刘建成</span>
+                <span>&emsp;</span>
+                <span>职业规划老师：田帅</span>
+            </ul>
 
-        <!-- 右边名称和退出按钮 -->
-        <ul class="layui-nav layui-layout-right ">
-            <li class="layui-nav-item">
-                <!-- 后台渲染的用户名 -->
-                <a href="javascript:;">王攀</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">基本资料</a></dd>
-                    <!--                    <dd><a href="">安全设置</a></dd>-->
-                </dl>
-            </li>
-            <li class="layui-nav-item"><a href="">退出</a></li>
-        </ul>
-    </div>
-
-    <div class="layui-side layui-bg-black">
-        <div class="layui-side-scroll">
-            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-            <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
+            <!-- 右边名称和退出按钮 -->
+            <ul class="layui-nav layui-layout-right ">
+                <li class="layui-nav-item">
+                    <!-- 后台渲染的用户名 -->
+                    <a href="javascript:;">王攀</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <!--                    <dd><a href="">安全设置</a></dd>-->
+                    </dl>
                 </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe705;</i> 班级课程</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
-                </li>
+                <li class="layui-nav-item"><a href="">退出</a></li>
             </ul>
         </div>
-    </div>
 
+<<<<<<< HEAD
     <div class="layui-body">
         <!-- 内容主体区域 -->
 <!--        <div class="rongrui">-->
@@ -357,8 +331,135 @@
         var element = layui.element;
     });
     $("")
+=======
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="lessons" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe705;</i> 班级课程</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div>
+                <button type="button" class="layui-btn">学生行为</button>
+                <button type="button" class="layui-btn">学院违纪</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>学号</th>
+                            <th>信息</th>
+                            <th>操作</th>
+                            <th>当前</th>
+                        </tr>
+                    </thead>
+                    <tbody id="r_fbox">
+                        <tr>
+                            <td>贤心</td>
+                            <td>XAH190905-01</td>
+                            <td>个人资料</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>人生就像是一场修行</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>人生就像是一场修行</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-</script>
+            </div>
+        </div>
+>>>>>>> aa83394863b3ba95ddcbafe220ce456ffbb6d0ca
+
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../layui/layui.all.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+
+        $.ajax({
+            url: './../MVC/controllers/xue_userController_state.php',
+            type: 'post',
+            data: {},
+            success: function (e) {
+                var obj = JSON.parse(e);
+                var str = '';
+                for (var i in obj) {
+                    str += `<tr>
+                    <td>${obj[i].student_name}</td>
+                    <td>${obj[i].student_num}</td>
+                    <td><a href="#" style="color:red">个人信息</a></td>
+                    <td>${obj[i].state_name}</td>
+                </tr>`;
+                    console.log(obj);
+                    $('#r_fbox').html(str);
+                }
+            },
+            error() {
+                console.log('error');
+            }
+        })
+    </script>
 </body>
+
 </html>
