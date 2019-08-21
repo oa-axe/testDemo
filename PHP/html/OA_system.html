@@ -23,24 +23,37 @@
             min-width: 750px;
             margin: 20px;
         }
+
         .hanwen1 {
             display: block;
         }
+
         .rongrui {
             display: none;
         }
+
         .ruixin {
             display: none;
         }
+
         .zhangyu1 {
             display: none;
         }
+
         .zhangyu2 {
             display: none;
         }
+
         .hanwen2 {
             display: none;
         }
+        .title2 {
+            display: none;
+        }
+        .rong2 {
+            display: none;
+        }
+
     </style>
 </head>
 <body class="layui-layout-body">
@@ -130,68 +143,130 @@
         <div class="rongrui">
             <div>
                 <button type="button" class="layui-btn r_act">学生行为</button>
-                <button type="button" class="layui-btn r_act">学员违纪</button>
+                <button type="button" class="layui-btn r_dis">学员违纪</button>
             </div>
             <div>
-                <table class="layui-table" lay-skin="row">
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                        <tr>
-                            <th>姓名</th>
-                            <th>学号</th>
-                            <th>信息</th>
-                            <th>状态</th>
-                            <th>当前</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>贤心</td>
-                            <td>XAH190905-01</td>
-                            <td>个人资料</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        <tr>
-                            <td>许闲心</td>
-                            <td>2016-11-28</td>
-                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        <tr>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                            <td>人生就像是一场修行</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        <tr>
-                            <td>许闲心</td>
-                            <td>2016-11-28</td>
-                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        <tr>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                            <td>人生就像是一场修行</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        <tr>
-                            <td>许闲心</td>
-                            <td>2016-11-28</td>
-                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                            <td>贤心</td>
-                            <td>2016-11-29</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <!-- 学员行为 -->
+                <table class="layui-table rong1" lay-skin="row">
+                    <thead>
+                    <tr class="">
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>信息</th>
+                        <th>当前</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>XAH190905-01</td>
+                        <td>个人资料</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
 
                 </table>
+                <!-- 学员违纪 -->
+                <table class="layui-table rong2" lay-skin="row">
+                    <thead>
+                    <tr>
+                        <th>录入时间</th>
+                        <th>姓名</th>
+                        <th>当前分数</th>
+                        <th>当前班级</th>
+                        <th>讲师</th>
+                        <th>违纪类型</th>
+                        <th>违纪时间</th>
+                        <th>执行人</th>
+                        <th>详情</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>开2019-09-10毕2020-01-27</td>
+                        <td>2020-03-27</td>
+                        <td>XAH190905</td>
+                        <td>西安中心HTML5就业班(2017.8)</td>
+                        <td>研一10/35</td>
+                        <td>田帅</td>
+                        <td>刘建成</td>
+                        <td>待开课</td>
+                        <td></td>
 
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万=的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- 班级管理 -->
@@ -484,7 +559,7 @@
         var element = layui.element;
     });
     //教学授课
-    $(".lessons1").on("click",function () {
+    $(".lessons1").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").hide();
         $(".zhangyu1").hide();
@@ -494,29 +569,37 @@
 
     });
     //教务管理
-    $(".lessons2").on("click",function () {
+    $(".lessons2").on("click", function () {
         $(".rongrui").show();
         $(".ruixin").hide();
         $(".zhangyu1").hide();
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
+        $(".r_act").on("click",function () {
+            $(".rong1").show();
+            $(".rong2").hide();
+        });
+        $(".r_dis").on("click",function () {
+            $(".rong1").hide();
+            $(".rong2").show();
+        });
 
     });
     //班级管理
-    $(".lessons3").on("click",function () {
+    $(".lessons3").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").show();
         $(".zhangyu1").hide();
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
-        $(".r_class").on("click",function () {
+        $(".r_class").on("click", function () {
             $(".title1").show();
             $(".title2").hide();
 
         });
-        $(".r_course").on("click",function () {
+        $(".r_course").on("click", function () {
             $(".title1").hide();
             $(".title2").show();
 
@@ -524,7 +607,7 @@
 
     });
     //考勤管理
-    $(".lessons4").on("click",function () {
+    $(".lessons4").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").hide();
         $(".zhangyu1").show();
@@ -534,7 +617,7 @@
 
     });
     //租赁管理
-    $(".lessons5").on("click",function () {
+    $(".lessons5").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").hide();
         $(".zhangyu1").hide();
@@ -544,7 +627,7 @@
 
     });
     //员工管理
-    $(".lessons6").on("click",function () {
+    $(".lessons6").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").hide();
         $(".zhangyu1").hide();
