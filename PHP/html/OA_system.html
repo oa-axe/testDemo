@@ -23,13 +23,22 @@
             min-width: 750px;
             margin: 20px;
         }
+        .hanwen1 {
+            display: block;
+        }
+        .rongrui {
+            display: none;
+        }
         .ruixin {
             display: none;
         }
-        .zhangyu {
+        .zhangyu1 {
             display: none;
         }
-        .hanwen {
+        .zhangyu2 {
+            display: none;
+        }
+        .hanwen2 {
             display: none;
         }
     </style>
@@ -97,61 +106,20 @@
         <!--教学授课-->
         <div class="hanwen1">
             <div>
-                <button type="button" class="layui-btn">员工信息</button>
+                <button type="button" class="layui-btn">授课班级</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
                     <thead>
                     <tr>
-                        <th>姓名</th>
-                        <th>学号</th>
-                        <th>信息</th>
-                        <th>状态</th>
-                        <th>当前</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>贤心</td>
-                        <td>XAH190905-01</td>
-                        <td>个人资料</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                    </tr>
-                    <tr>
-                        <td>许闲心</td>
-                        <td>2016-11-28</td>
-                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                    </tr>
-                    <tr>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                        <td>人生就像是一场修行</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                    </tr>
-                    <tr>
-                        <td>许闲心</td>
-                        <td>2016-11-28</td>
-                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                    </tr>
-                    <tr>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                        <td>人生就像是一场修行</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
-                    </tr>
-                    <tr>
-                        <td>许闲心</td>
-                        <td>2016-11-28</td>
-                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                        <td>贤心</td>
-                        <td>2016-11-29</td>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
                     </tr>
                     </tbody>
                 </table>
@@ -161,16 +129,67 @@
         <!-- 教务管理 -->
         <div class="rongrui">
             <div>
-                <button type="button" class="layui-btn r_act">授课班级</button>
+                <button type="button" class="layui-btn r_act">学生行为</button>
+                <button type="button" class="layui-btn r_act">学员违纪</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
-                    <thead>
+                    <table class="layui-table" lay-skin="row">
+                        <thead>
                         <tr>
-                            <th>班级名称</th>
-                            <th>班级名称</th>
+                            <th>姓名</th>
+                            <th>学号</th>
+                            <th>信息</th>
+                            <th>状态</th>
+                            <th>当前</th>
                         </tr>
-                    </thead>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>贤心</td>
+                            <td>XAH190905-01</td>
+                            <td>个人资料</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>人生就像是一场修行</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>人生就像是一场修行</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>2016-11-28</td>
+                            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                 </table>
 
             </div>
@@ -184,7 +203,7 @@
             <div>
                 <table class="layui-table" lay-skin="row">
                     <thead>
-                    <tr>
+                    <tr class="title1">
                         <th>开班/毕业日期</th>
                         <th>就业截止日期</th>
                         <th>班级名称</th>
@@ -193,6 +212,17 @@
                         <th>职规师</th>
                         <th>讲师</th>
                         <th>课程进度</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr class="title2">
+                        <th>课程名称</th>
+                        <th>学科编码</th>
+                        <th>课程分类</th>
+                        <th>所属校区</th>
+                        <th>科目安排</th>
+                        <th>所需时长</th>
+                        <th>定价</th>
+                        <th>状态</th>
                         <th>操作</th>
                     </tr>
                     </thead>
@@ -482,9 +512,13 @@
         $(".hanwen2").hide();
         $(".hanwen1").hide();
         $(".r_class").on("click",function () {
+            $(".title1").show();
+            $(".title2").hide();
 
         });
         $(".r_course").on("click",function () {
+            $(".title1").hide();
+            $(".title2").show();
 
         });
 
