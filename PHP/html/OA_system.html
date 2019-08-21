@@ -65,25 +65,28 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree" lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 瀚文 -->
                     <a class="lessons1" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
+                    <!--荣瑞-->
                     <a class="lessons2" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons3" href="javascript:;"><i class="layui-icon">&#xe705;</i> 班级课程</a>
+                    <!-- 范瑞鑫-->
+                    <a class="lessons3" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons4" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
+                    <!-- 张宇   -->
+                    <a class="lessons4" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons5" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
+                    <!-- 张宇-->
+                    <a class="lessons5" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons6" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="lessons7" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
+                    <!-- 瀚文-->
+                    <a class="lessons6" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
                 </li>
             </ul>
         </div>
@@ -91,10 +94,10 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div class="rongrui">
+        <!--教学授课-->
+        <div class="hanwen1">
             <div>
-                <button type="button" class="layui-btn">学生行为</button>
-                <button type="button" class="layui-btn">学院违纪</button>
+                <button type="button" class="layui-btn">员工信息</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
@@ -104,6 +107,7 @@
                         <th>学号</th>
                         <th>信息</th>
                         <th>状态</th>
+                        <th>当前</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -111,7 +115,8 @@
                         <td>贤心</td>
                         <td>XAH190905-01</td>
                         <td>个人资料</td>
-                        <td>带开课</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
                     </tr>
                     <tr>
                         <td>许闲心</td>
@@ -153,10 +158,28 @@
 
             </div>
         </div>
+        <!-- 教务管理 -->
+        <div class="rongrui">
+            <div>
+                <button type="button" class="layui-btn r_act">授课班级</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                        <tr>
+                            <th>班级名称</th>
+                            <th>班级名称</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+        <!-- 班级管理 -->
         <div class="ruixin">
             <div>
-                <button type="button" class="layui-btn">班级管理</button>
-                <button type="button" class="layui-btn">课程管理</button>
+                <button type="button" class="layui-btn r_class">班级管理</button>
+                <button type="button" class="layui-btn r_course">课程管理</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
@@ -226,10 +249,10 @@
 
             </div>
         </div>
-        <div class="zhangyu">
+        <!-- 考勤管理 -->
+        <div class="zhangyu1">
             <div>
-                <button type="button" class="layui-btn">学生行为</button>
-                <button type="button" class="layui-btn">学院违纪</button>
+                <button type="button" class="layui-btn">考勤记录</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
@@ -290,10 +313,75 @@
 
             </div>
         </div>
-        <div class="hanwen">
+        <!-- 租赁管理 -->
+        <div class="zhangyu2">
             <div>
-                <button type="button" class="layui-btn">学生行为</button>
-                <button type="button" class="layui-btn">学院违纪</button>
+                <button type="button" class="layui-btn">租借记录</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>信息</th>
+                        <th>状态</th>
+                        <th>当前</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>XAH190905-01</td>
+                        <td>个人资料</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <!-- 员工管理 -->
+        <div class="hanwen2">
+            <div>
+                <button type="button" class="layui-btn">员工信息</button>
             </div>
             <div>
                 <table class="layui-table" lay-skin="row">
@@ -365,19 +453,72 @@
     layui.use('element', function () {
         var element = layui.element;
     });
+    //教学授课
     $(".lessons1").on("click",function () {
-        $(".rongrui").show();
-        $(".zhangyu").hide();
-        $(".hanwen").hide();
-        $(".ruixin").hide();
-    })
-    $(".lessons2").on("click",function () {
         $(".rongrui").hide();
-        $(".zhangyu").show();
-        $(".hanwen").hide();
         $(".ruixin").hide();
-    })
+        $(".zhangyu1").hide();
+        $(".zhangyu2").hide();
+        $(".hanwen2").hide();
+        $(".hanwen1").show();
 
+    });
+    //教务管理
+    $(".lessons2").on("click",function () {
+        $(".rongrui").show();
+        $(".ruixin").hide();
+        $(".zhangyu1").hide();
+        $(".zhangyu2").hide();
+        $(".hanwen2").hide();
+        $(".hanwen1").hide();
+
+    });
+    //班级管理
+    $(".lessons3").on("click",function () {
+        $(".rongrui").hide();
+        $(".ruixin").show();
+        $(".zhangyu1").hide();
+        $(".zhangyu2").hide();
+        $(".hanwen2").hide();
+        $(".hanwen1").hide();
+        $(".r_class").on("click",function () {
+
+        });
+        $(".r_course").on("click",function () {
+
+        });
+
+    });
+    //考勤管理
+    $(".lessons4").on("click",function () {
+        $(".rongrui").hide();
+        $(".ruixin").hide();
+        $(".zhangyu1").show();
+        $(".zhangyu2").hide();
+        $(".hanwen2").hide();
+        $(".hanwen1").hide();
+
+    });
+    //租赁管理
+    $(".lessons5").on("click",function () {
+        $(".rongrui").hide();
+        $(".ruixin").hide();
+        $(".zhangyu1").hide();
+        $(".zhangyu2").show();
+        $(".hanwen2").hide();
+        $(".hanwen1").hide();
+
+    });
+    //员工管理
+    $(".lessons6").on("click",function () {
+        $(".rongrui").hide();
+        $(".ruixin").hide();
+        $(".zhangyu1").hide();
+        $(".zhangyu2").hide();
+        $(".hanwen2").show();
+        $(".hanwen1").hide();
+
+    });
 
 
 </script>
