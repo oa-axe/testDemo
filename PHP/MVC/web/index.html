@@ -17,7 +17,22 @@
     qq<input id="qq" type="text">
     <input id="saveBtn" type="button" value="保存">
     <div id="fbox">
-
+        <table>
+            <thead>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>信息</th>
+                <th>当前状态</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 <script>
@@ -47,7 +62,7 @@
         type: 'post',
         data: {},
         success: function (e) {
-            console.log(e);
+            // console.log(e);
             var obj = JSON.parse(e);
             console.log(obj);
             $('#fbox').html(obj);

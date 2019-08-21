@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <style>
+        .left {
+            margin-top: 20px;
+        }
+
+        .layui-icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        body {
+            min-width: 900px;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header layui-bg-cyan">
+            <!-- 左边LOGO -->
+            <div class="layui-logo layui-bg-black">蓝欧科技</div>
+            <ul class="layui-nav layui-layout-left left">
+                <span>班级：XAH190402</span>
+                <span>&emsp;</span>
+                <span>讲师：刘建成</span>
+                <span>&emsp;</span>
+                <span>职业规划老师：田帅</span>
+            </ul>
+
+            <!-- 右边名称和退出按钮 -->
+            <ul class="layui-nav layui-layout-right ">
+                <li class="layui-nav-item">
+                    <!-- 后台渲染的用户名 -->
+                    <a href="javascript:;">王攀</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <!--                    <dd><a href="">安全设置</a></dd>-->
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退出</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="lessons" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe705;</i> 班级课程</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;">
+                内容主体区域
+            </div>
+        </div>
+
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../layui/layui.all.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+    </script>
+</body>
+
+</html>
