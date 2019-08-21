@@ -11,12 +11,14 @@
 </head>
 
 <body>
+    <!-- 
     用户名：<input id="username" type="text">
     密码<input id="password" type="password">
     phonenum：<input id="phonenum" type="text">
     qq<input id="qq" type="text">
     <input id="saveBtn" type="button" value="保存">
-    <div id="fbox">
+     -->
+    <div id="r_fbox">
         <table>
             <thead>
                 <th>姓名</th>
@@ -24,13 +26,8 @@
                 <th>信息</th>
                 <th>当前状态</th>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tbody id="r_box">
+
             </tbody>
         </table>
     </div>
@@ -62,10 +59,18 @@
         type: 'post',
         data: {},
         success: function (e) {
-            // console.log(e);
             var obj = JSON.parse(e);
-            console.log(obj);
-            $('#fbox').html(obj);
+            var str = '';
+            for (var i in obj) {
+                str += `<tr>
+                    <td>${obj[i].student_name}</td>
+                    <td>${obj[i].student_num}</td>
+                    <td><a href="#">个人信息</a></td>
+                    <td>${obj[i].student_major_state}</td>
+                </tr>`;
+                console.log(obj);
+                $('#r_fbox').html(str);
+            }
         },
         error() {
             console.log('error');
