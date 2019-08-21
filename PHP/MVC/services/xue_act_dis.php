@@ -2,14 +2,13 @@
 
 
 $path = dirname(dirname(__FILE__));
-include_once($path . '/dao/xueDao.php');
-// include_once($path . '/dao/xuedetailDao.php');
+include_once($path . '/dao/xueDao_dis.php');
 class UserService
 {
-  public function select($parm)
+  public function anotherSelect()
   {
     $user = new UserDao();
-    $result = $user->select($parm);
+    $result = $user->anotherSelect();
     return $result;
   }
 }
