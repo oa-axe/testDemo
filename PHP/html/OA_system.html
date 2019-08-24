@@ -48,15 +48,6 @@
         .hanwen2 {
             display: none;
         }
-<<<<<<< HEAD
-        .title2 {
-            display: none;
-        }
-        .rong2 {
-            display: none;
-        }
-
-=======
 
         .title2 {
             display: none;
@@ -65,68 +56,103 @@
         .rong2 {
             display: none;
         }
->>>>>>> f4928213ab5f4ef2bdcd146dd9ea90d9e68ad8f2
+
+        .fan_fram, .fan_fram1 {
+            width: 900px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #888;
+            padding: 20px;
+            display: none;
+        }
     </style>
 </head>
 
 <body class="layui-layout-body">
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header layui-bg-cyan">
-            <!-- 左边LOGO -->
-            <div class="layui-logo layui-bg-black">蓝欧科技</div>
-            <ul class="layui-nav layui-layout-left left">
-                <span>班级：XAH190402</span>
-                <span>&emsp;</span>
-                <span>讲师：刘建成</span>
-                <span>&emsp;</span>
-                <span>职业规划老师：田帅</span>
-            </ul>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header layui-bg-cyan">
+        <!-- 左边LOGO -->
+        <div class="layui-logo layui-bg-black">蓝欧科技</div>
+        <ul class="layui-nav layui-layout-left left">
+            <span>班级：XAH190402</span>
+            <span>&emsp;</span>
+            <span>讲师：刘建成</span>
+            <span>&emsp;</span>
+            <span>职业规划老师：田帅</span>
+        </ul>
 
-            <!-- 右边名称和退出按钮 -->
-            <ul class="layui-nav layui-layout-right ">
-                <li class="layui-nav-item">
-                    <!-- 后台渲染的用户名 -->
-                    <a href="javascript:;">王攀</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                    </dl>
+        <!-- 右边名称和退出按钮 -->
+        <ul class="layui-nav layui-layout-right ">
+            <li class="layui-nav-item">
+                <!-- 后台渲染的用户名 -->
+                <a href="javascript:;">王攀</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 瀚文 -->
+                    <a class="lessons1" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
                 </li>
-                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!--荣瑞-->
+                    <a class="lessons2" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 樊瑞鑫-->
+                    <a class="lessons3" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 张宇   -->
+                    <a class="lessons4" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 张宇-->
+                    <a class="lessons5" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!-- 瀚文-->
+                    <a class="lessons6" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
+                </li>
             </ul>
         </div>
+    </div>
 
-        <div class="layui-side layui-bg-black">
-            <div class="layui-side-scroll">
-                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!-- 瀚文 -->
-                        <a class="lessons1" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 教学授课</a>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!--荣瑞-->
-                        <a class="lessons2" href="javascript:;"><i class="layui-icon">&#xe62a;</i> 教务管理</a>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!-- 范瑞鑫-->
-                        <a class="lessons3" href="javascript:;"><i class="layui-icon">&#xe656;</i> 班级管理</a>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!-- 张宇   -->
-                        <a class="lessons4" href="javascript:;"><i class="layui-icon">&#xe62d;</i> 考勤管理</a>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!-- 张宇-->
-                        <a class="lessons5" href="javascript:;"><i class="layui-icon">&#xe60a;</i> 租赁管理</a>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <!-- 瀚文-->
-                        <a class="lessons6" href="javascript:;"><i class="layui-icon">&#xe770;</i> 员工管理</a>
-                    </li>
-                </ul>
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <!--教学授课-->
+        <div class="hanwen1">
+            <div>
+                <button type="button" class="layui-btn">授课班级</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
+                        <td>班级名称</td>
+                    </tr>
+                    </tbody>
+                </table>
+
             </div>
         </div>
-<<<<<<< HEAD
         <!-- 教务管理 -->
         <div class="rongrui">
             <div>
@@ -255,391 +281,382 @@
                     </tr>
                     </tbody>
                 </table>
-=======
-
-        <div class="layui-body">
-            <!-- 内容主体区域 -->
-            <!--教学授课-->
-            <div class="hanwen1">
-                <div>
-                    <button type="button" class="layui-btn">授课班级</button>
-                </div>
-                <div>
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                            <tr>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>班级名称</td>
-                                <td>班级名称</td>
-                                <td>班级名称</td>
-                                <td>班级名称</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
->>>>>>> f4928213ab5f4ef2bdcd146dd9ea90d9e68ad8f2
             </div>
-            <!-- 教务管理 -->
-            <div class="rongrui">
-                <div>
-                    <button type="button" class="layui-btn r_act">学生行为</button>
-                    <button type="button" class="layui-btn r_dis">学员违纪</button>
-                </div>
-                <div>
-                    <!-- 学员行为 -->
-                    <table class="layui-table rong1" lay-skin="row">
-                        <thead>
-                            <tr class="">
-                                <th>姓名</th>
-                                <th>学号</th>
-                                <th>信息</th>
-                                <th>当前</th>
-                            </tr>
-                        </thead>
-                        <tbody id="r_fbox">
-                            <tr>
-                                <td>贤心</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- 学员违纪 -->
-                    <table class="layui-table rong2" lay-skin="row">
-                        <thead>
-                            <tr>
-                                <th>录入时间</th>
-                                <th>姓名</th>
-                                <th>当前分数</th>
-                                <th>当前班级</th>
-                                <th>讲师</th>
-                                <th>违纪类型</th>
-                                <th>违纪时间</th>
-                                <th>执行人</th>
-                                <th>详情</th>
-                            </tr>
-                        </thead>
-                        <tbody id="r_fbox_dis">
-                            <tr>
-                                <td>贤心</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </div>
+        <!-- 班级管理 -->
+        <div class="ruixin">
+            <div>
+                <button type="button" class="layui-btn r_class">班级管理</button>
+                <button type="button" class="layui-btn r_course">课程管理</button>
+                <button type="button" class="layui-btn" onclick="fan_add()" style="float: right">
+                    <i class="layui-icon">&#xe608;</i> 添加
+                </button>
             </div>
-            <!-- 班级管理 -->
-            <div class="ruixin">
-                <div>
-                    <button type="button" class="layui-btn r_class">班级管理</button>
-                    <button type="button" class="layui-btn r_course">课程管理</button>
-                </div>
-                <div>
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                            <tr class="title1">
-                                <th>开班/毕业日期</th>
-                                <th>就业截止日期</th>
-                                <th>班级名称</th>
-                                <th>校区课程</th>
-                                <th>教室</th>
-                                <th>职规师</th>
-                                <th>讲师</th>
-                                <th>课程进度</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr class="title2">
-                                <th>课程名称</th>
-                                <th>学科编码</th>
-                                <th>课程分类</th>
-                                <th>所属校区</th>
-                                <th>科目安排</th>
-                                <th>所需时长</th>
-                                <th>定价</th>
-                                <th>状态</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>开2019-09-10毕2020-01-27</td>
-                                <td>2020-03-27</td>
-                                <td>XAH190905</td>
-                                <td>西安中心HTML5就业班(2017.8)</td>
-                                <td>研一10/35</td>
-                                <td>田帅</td>
-                                <td>刘建成</td>
-                                <td>待开课</td>
-                                <td></td>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr class="title1">
+                        <th>开班/毕业日期</th>
+                        <th>就业截止日期</th>
+                        <th>班级名称</th>
+                        <th>校区课程</th>
+                        <th>教室</th>
+                        <th>职规师</th>
+                        <th>班级课程</th>
+                        <th>课程进度</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr class="title2">
+                        <th>课程名称</th>
+                        <th>学科编码</th>
+                        <th>课程分类</th>
+                        <th>所属校区</th>
+                        <th>科目安排</th>
+                        <th>所需时长</th>
+                        <th>定价</th>
+                        <th>状态</th>
+                        <th>操作</th>
 
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万=的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    </tr>
+                    </thead>
+                    <tbody class="f_conten">
 
-                </div>
-            </div>
-            <!-- 考勤管理 -->
-            <div class="zhangyu1">
-                <div>
-                    <button type="button" class="layui-btn">考勤记录</button>
-                </div>
-                <div>
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                            <tr>
-                                <th>姓名</th>
-                                <th>学号</th>
-                                <th>信息</th>
-                                <th>状态</th>
-                                <th>当前</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>贤心</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
 
+                <div class="fan_fram">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">开班/毕业日期</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入开班/毕业日期"
+                                   autocomplete="off" class="layui-input stat1">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">就业截止日期</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入就业截止日期"
+                                   autocomplete="off" class="layui-input stat2">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选择班级</label>
+                        <div class="layui-input-block">
+                            <select name="班级" lay-verify="required" class="clas1">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">校区课程</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入校区课程"
+                                   autocomplete="off" class="layui-input cours1">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">教室</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入教室"
+                                   autocomplete="off" class="layui-input cours2">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选择职规师</label>
+                        <div class="layui-input-block">
+                            <select name="老师" lay-verify="required" class="clas2">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">讲课范围</label>
+                        <div class="layui-input-block">
+                            <textarea name="desc" placeholder="请输入内容" class="layui-textarea cours3"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">课程进度</label>
+                        <div class="layui-input-block">
+                            <select name="进度" lay-verify="required" class="clas3">
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn ad1" lay-submit lay-filter="formDemo">提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary ad2">取消</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fan_fram1">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">课程名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入课程名称"
+                                   autocomplete="off" class="layui-input f_in1">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">学科编码</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入学科编码"
+                                   autocomplete="off" class="layui-input f_in2">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">课程分类</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入课程分类"
+                                   autocomplete="off" class="layui-input f_in3">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">所属校区</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入校区"
+                                   autocomplete="off" class="layui-input f_in4">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">科目安排</label>
+                        <div class="layui-input-block">
+                            <textarea name="desc" placeholder="请输入科目安排" class="layui-textarea  f_in5"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">所需时长</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入所需时常"
+                                   autocomplete="off" class="layui-input f_in6">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">价格</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入定价"
+                                   autocomplete="off" class="layui-input f_in7">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <select name="状态" lay-verify="required" class=" f_in8">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn ad3" lay-submit lay-filter="formDemo">确认</button>
+                            <button type="reset ad4" class="layui-btn layui-btn-primary">取消</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- 租赁管理 -->
-            <div class="zhangyu2">
-                <div>
-                    <button type="button" class="layui-btn">租借记录</button>
-                </div>
-                <div>
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                            <tr>
-                                <th>姓名</th>
-                                <th>学号</th>
-                                <th>信息</th>
-                                <th>状态</th>
-                                <th>当前</th>
-                                <th>时间</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>贤心</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
+        </div>
+        <!-- 考勤管理 -->
+        <div class="zhangyu1">
+            <div>
+                <button type="button" class="layui-btn">考勤记录</button>
             </div>
-            <!-- 员工管理 -->
-            <div class="hanwen2">
-                <div>
-                    <button type="button" class="layui-btn">员工信息</button>
-                </div>
-                <div>
-                    <table class="layui-table" lay-skin="row">
-                        <thead>
-                            <tr>
-                                <th>姓名</th>
-                                <th>学号</th>
-                                <th>信息</th>
-                                <th>状态</th>
-                                <th>当前</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>贤心</td>
-                                <td>XAH190905-01</td>
-                                <td>个人资料</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                                <td>人生就像是一场修行</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                            <tr>
-                                <td>许闲心</td>
-                                <td>2016-11-28</td>
-                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                                <td>贤心</td>
-                                <td>2016-11-29</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>信息</th>
+                        <th>状态</th>
+                        <th>当前</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>XAH190905-01</td>
+                        <td>个人资料</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-                </div>
             </div>
+        </div>
+        <!-- 租赁管理 -->
+        <div class="zhangyu2">
+            <div>
+                <button type="button" class="layui-btn">租借记录</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>信息</th>
+                        <th>状态</th>
+                        <th>当前</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>XAH190905-01</td>
+                        <td>个人资料</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
+                </table>
 
+            </div>
+        </div>
+        <!-- 员工管理 -->
+        <div class="hanwen2">
+            <div>
+                <button type="button" class="layui-btn">员工信息</button>
+            </div>
+            <div>
+                <table class="layui-table" lay-skin="row">
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>信息</th>
+                        <th>状态</th>
+                        <th>当前</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>贤心</td>
+                        <td>XAH190905-01</td>
+                        <td>个人资料</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    <tr>
+                        <td>许闲心</td>
+                        <td>2016-11-28</td>
+                        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
         </div>
 
     </div>
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-    <script src="../layui/layui.all.js"></script>
-    <script>
-        //JavaScript代码区域
-        layui.use('element', function () {
-            var element = layui.element;
-        });
-        //教学授课
-        $(".lessons1").on("click", function () {
-            $(".rongrui").hide();
-            $(".ruixin").hide();
-            $(".zhangyu1").hide();
-            $(".zhangyu2").hide();
-            $(".hanwen2").hide();
-            $(".hanwen1").show();
 
-<<<<<<< HEAD
 </div>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="../layui/layui.all.js"></script>
@@ -648,6 +665,9 @@
     layui.use('element', function () {
         var element = layui.element;
     });
+    layui.use('layer', function () { //独立版的layer无需执行这一句
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+    })
     //教学授课
     $(".lessons1").on("click", function () {
         $(".rongrui").hide();
@@ -656,6 +676,8 @@
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").show();
+        $('.fan_fram1').hide();
+        $('.fan_fram').hide();
 
     });
     //教务管理
@@ -666,17 +688,305 @@
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
-        $(".r_act").on("click",function () {
+        $('.fan_fram1').hide();
+        $('.fan_fram').hide();
+        $(".r_act").on("click", function () {
             $(".rong1").show();
             $(".rong2").hide();
         });
-        $(".r_dis").on("click",function () {
+        $(".r_dis").on("click", function () {
             $(".rong1").hide();
             $(".rong2").show();
         });
 
     });
     //班级管理
+    var f_st1;
+    var f_st2;
+    var f_cal1;
+    var f_cour1;
+    var f_cour2;
+    var f_cal2;
+    var f_cour3;
+    var f_cal3;
+    var f_call1;
+    var f_call2;
+    var f_call3;
+    var f_call4;
+    var f_type;
+    var f_upid;
+
+
+    function fan_add() {
+        f_type = 0;
+        if (fun == 'tb_class_details') {
+            $('.fan_fram').show();
+            $('.stat1').val('')
+            $('.stat2').val('')
+            $('.cours1').val('')
+            $('.cours2').val('')
+            $('.cours3').val('')
+
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: fun + 'a1',
+                },
+                success: function (e) {
+                    // console.log(JSON.parse(e));
+                    var arr = JSON.parse(e);
+                    $('.clas1').html('');
+                    $('.clas2').html('');
+                    $('.clas3').html('');
+                    for (var i in arr[0]) {
+                        $('.clas1').append(`<option value="${arr[0][i].class_id}">${arr[0][i].class_name}</option>`)
+                    }
+                    for (var i in arr[1]) {
+                        $('.clas2').append(`<option value="${arr[1][i].staff_id}">${arr[1][i].staff_name}</option>`)
+                    }
+                    for (var i in arr[2]) {
+                        $('.clas3').append(`<option value="${arr[2][i].course_state_id}">${arr[2][i].course_state_name}</option>`)
+                    }
+                    // debugger
+                    f_call1 = $('.clas1').val()
+                    f_call2 = $('.clas2').val()
+                    f_call3 = $('.clas3').val()
+                }
+            })
+        }
+        if (fun == 'tb_course') {
+            $('.fan_fram1').show();
+            $('.f_in1').val('')
+            $('.f_in2').val('')
+            $('.f_in3').val('')
+            $('.f_in4').val('')
+            $('.f_in5').val('')
+            $('.f_in6').val('')
+            $('.f_in7').val('')
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: fun + 'a1',
+                },
+                success: function (e) {
+                    var arr = JSON.parse(e);
+                    $('.f_in8').html('');
+                    for (var i in arr[0]) {
+                        $('.f_in8').append(`<option value="${arr[0][i].class_course_id}">${arr[0][i].class_course_name}</option>`)
+                    }
+                    f_call4 = $('.f_in8').val()
+                    // // debugger
+                    // f_call1 = $('.clas1').val()
+                }
+
+            })
+        }
+
+
+    }
+
+    $(".clas1").change(function () {
+        f_call1 = $(this).children('option:selected').val(); //监听option获取里面的值
+    })
+    $(".clas2").change(function () {
+        f_call2 = $(this).children('option:selected').val(); //监听option获取里面的值
+    })
+    $(".clas3").change(function () {
+        f_call3 = $(this).children('option:selected').val(); //监听option获取里面的值
+    })
+    $(".f_in8").change(function () {
+        f_call4 = $(this).children('option:selected').val(); //监听option获取里面的值
+    })
+    $('.ad1').on("click", function () {
+        f_st1 = $('.stat1').val()
+        f_st2 = $('.stat2').val()
+        //  f_cal1=$('.clas1').val()
+        f_cour1 = $('.cours1').val()
+        f_cour2 = $('.cours2').val()
+        //  f_cal2=$('.clas2').val()
+        f_cour3 = $('.cours3').val()
+        //  f_cal3=$('.clas3').val()
+        f_cal1 = f_call1
+        f_cal2 = f_call2
+        f_cal3 = f_call3
+        if (f_cal1 !== '' && f_cal2 !== '' && f_cal3 !== '' && f_st1 !== '' && f_st2 !== '' && f_cour1 !== '' && f_cour2 !== '' && f_cour3 !== '') {
+            var f_obj = {
+                'start_end_time': f_st1,
+                'employment_data': f_st2,
+                'class_id': f_cal1,
+                'campu_courses': f_cour1,
+                'classroom': f_cour2,
+                'staff_id': f_cal2,
+                'progress': f_cour3,
+                'course_state_id': f_cal3,
+            }
+            // var da=JSON.stringify( f_obj);
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: f_type == 0 ? fun + 'a2' : fun + 's2',
+                    d: f_obj,
+                    fid: f_upid
+                },
+                success: function (e) {
+                debugger
+                    $('.fan_fram').hide();
+                    $.ajax({
+                        url: './../MVC/index.php',
+                        type: 'post',
+                        data: {
+                            c: 'fan',
+                            a: 'f_seleall'
+                        },
+                        success: function (e) {
+
+                            var res = JSON.parse(e);
+                            $('.f_conten').html('');
+                            for (var i in res) {
+                                $('.f_conten').prepend(`<tr>
+                        <td>${res[i].start_end_time}</td>
+                        <td>${res[i].employment_data}</td>
+                        <td>${res[i].class_name}</td>
+                        <td>${res[i].campu_courses}</td>
+                        <td>${res[i].classroom}</td>
+                        <td>${res[i].staff_name}</td>
+                        <td>${res[i].progress}</td>
+                        <td>${res[i].course_state_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+                        </td>
+                    </tr>`)
+                            }
+                        }
+                    });
+
+                }
+            })
+
+
+        } else {
+            alert('内容未填写完成');
+        }
+
+
+    })
+    $('.ad2').on("click", function () {
+        // console.log($('.clas3').val())
+        $('.fan_fram').hide();
+
+    })
+    $('.ad3').on("click", function () {
+        f_st1 = $('.f_in1').val()
+        f_st2 = $('.f_in2').val()
+        //  f_cal1=$('.clas1').val()
+        f_cour1 = $('.f_in3').val()
+        f_cour2 = $('.f_in4').val()
+        //  f_cal2=$('.clas2').val()
+        f_cour3 = $('.f_in5').val()
+        //  f_cal3=$('.clas3').val()
+        f_cal1 = $('.f_in6').val()
+        f_cal2 = $('.f_in7').val()
+        f_cal4 = $('.f_in8').val()
+
+        if (isNaN(Number(f_cal2)) == false) {
+        debugger
+            if (f_cal1 !== '' && f_cal2 !== '' && f_cal3 !== '' && f_st1 !== '' && f_st2 !== '' && f_cour1 !== '' && f_cour2 !== '' && f_cour3 !== '') {
+                var f_obj = {
+                    'course_name': f_st1,
+                    'course_coding': f_st2,
+                    'course_category': f_cour1,
+                    'course_campus': f_cour2,
+                    'course_plan': f_cour3,
+                    'course_duration': f_cal1,
+                    'course_price': f_cal2,
+                    'class_course_id': f_cal4,
+                }
+                // var da=JSON.stringify( f_obj);
+                $.ajax({
+                    url: './../MVC/index.php',
+                    type: 'post',
+                    data: {
+                        c: 'fan',
+                        a: f_type == 0 ? fun + 'a2' : fun + 's2',
+                        d: f_obj,
+                        fid: f_upid
+                    },
+                    success: function (e) {
+                        $('.fan_fram1').hide();
+                        $.ajax({
+                            url: './../MVC/index.php',
+                            type: 'post',
+                            data: {
+                                c: 'fan',
+                                a: 'f_seleall1',
+                            },
+                            success: function (e) {
+                                // fun = 'cor';
+                                var res = JSON.parse(e);
+                                // console.log(res);
+                                $('.f_conten').html('');
+                                for (var i in res) {
+                                    $('.f_conten').prepend(`<tr>
+                        <td>${res[i].course_name}</td>
+                        <td>${res[i].course_coding}</td>
+                        <td>${res[i].course_category}</td>
+                        <td>${res[i].course_campus}</td>
+                        <td>${res[i].course_plan}</td>
+                        <td>${res[i].course_duration}</td>
+                        <td>${res[i].course_price}</td>
+                        <td>${res[i].class_course_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+   
+                    </td></tr>`)
+                                }
+                            }
+                        });
+
+                    }
+                })
+
+
+            } else {
+                alert('内容未填写完成');
+            }
+        } else {
+            alert('价格格式不正确');
+        }
+
+
+    })
+    $('.ad4').on("click", function () {
+        // console.log($('.clas3').val())
+        $('.fan_fram1').hide();
+
+    })
+    var fun = '';
+    var fas = '';
     $(".lessons3").on("click", function () {
         $(".rongrui").hide();
         $(".ruixin").show();
@@ -684,124 +994,353 @@
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
+        fun = 'tb_class_details';
+        $.ajax({
+            url: './../MVC/index.php',
+            type: 'post',
+            data: {
+                c: 'fan',
+                a: 'f_seleall'
+            },
+            success: function (e) {
+            debugger
+                var res = JSON.parse(e);
+                $('.f_conten').html('');
+                for (var i in res) {
+                    $('.f_conten').prepend(`<tr>
+                        <td>${res[i].start_end_time}</td>
+                        <td>${res[i].employment_data}</td>
+                        <td>${res[i].class_name}</td>
+                        <td>${res[i].campu_courses}</td>
+                        <td>${res[i].classroom}</td>
+                        <td>${res[i].staff_name}</td>
+                        <td>${res[i].progress}</td>
+                        <td>${res[i].course_state_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+                        </td>
+                    </tr>`)
+                }
+            }
+        });
+
         $(".r_class").on("click", function () {
+            fun = 'tb_class_details';
             $(".title1").show();
             $(".title2").hide();
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: 'f_seleall',
+                },
+                success: function (e) {
+                    var res = JSON.parse(e);
+                    $('.f_conten').html('');
+                    for (var i in res) {
+                        $('.f_conten').prepend(`<tr>
+                        <td>${res[i].start_end_time}</td>
+                        <td>${res[i].employment_data}</td>
+                        <td>${res[i].class_name}</td>
+                        <td>${res[i].campu_courses}</td>
+                        <td>${res[i].classroom}</td>
+                        <td>${res[i].staff_name}</td>
+                        <td>${res[i].progress}</td>
+                        <td>${res[i].course_state_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+                        </td>
+                        
+                    </tr>`)
+                    }
+                }
+            });
 
         });
         $(".r_course").on("click", function () {
+            fun = 'tb_course';
             $(".title1").hide();
             $(".title2").show();
-=======
-        });
-        //教务管理
-        $(".lessons2").on("click", function () {
-            $(".rongrui").show();
-            $(".ruixin").hide();
-            $(".zhangyu1").hide();
-            $(".zhangyu2").hide();
-            $(".hanwen2").hide();
-            $(".hanwen1").hide();
+
             $.ajax({
-                url: './../MVC/controllers/xue_userController_state.php',
+                url: './../MVC/index.php',
                 type: 'post',
-                data: {},
-                success: function (e) {
-                    var obj = JSON.parse(e);
-                    console.log(obj);
-                    var str = '';
-
-                    for (var i in obj) {
-                        str += `<tr>
-                    <td>${obj[i].student_name}</td>
-                    <td>${obj[i].student_num}</td>
-                    <td><a href="#" style="color:red">个人信息</a></td>
-                    <td>${obj[i].state_name}</td>
-                </tr>`;
-                    }
-                    $('#r_fbox').html(str);
+                data: {
+                    c: 'fan',
+                    a: 'f_seleall1',
                 },
-                error() {
-                    console.log('error');
+                success: function (e) {
+                    // fun = 'cor';
+                    var res = JSON.parse(e);
+                    // console.log(res);
+                    $('.f_conten').html('');
+                    for (var i in res) {
+                        $('.f_conten').prepend(`<tr>
+                        <td>${res[i].course_name}</td>
+                        <td>${res[i].course_coding}</td>
+                        <td>${res[i].course_category}</td>
+                        <td>${res[i].course_campus}</td>
+                        <td>${res[i].course_plan}</td>
+                        <td>${res[i].course_duration}</td>
+                        <td>${res[i].course_price}</td>
+                        <td>${res[i].class_course_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+   
+                    </td></tr>`)
+                    }
                 }
-            })
+            });
 
         });
-        $(".r_act").on("click", function () {
-            $(".rong1").show();
-            $(".rong2").hide();
-            $.ajax({
-                url: './../MVC/controllers/xue_userController_state.php',
-                type: 'post',
-                data: {},
-                success: function (e) {
-                    var obj = JSON.parse(e);
-                    console.log(obj);
-                    var str = '';
 
-                    for (var i in obj) {
-                        str += `<tr>
-                    <td>${obj[i].student_name}</td>
-                    <td>${obj[i].student_num}</td>
-                    <td><a href="#" style="color:red">个人信息</a></td>
-                    <td>${obj[i].state_name}</td>
-                </tr>`;
-                    }
-                    $('#r_fbox').html(str);
-                },
-                error() {
-                    console.log('error');
-                }
-            })
->>>>>>> f4928213ab5f4ef2bdcd146dd9ea90d9e68ad8f2
-
-        });
-        $(".r_dis").on("click", function () {
-            $(".rong1").hide();
-            $(".rong2").show();
-            $.ajax({
-                url: './../MVC/controllers/xue_userController_dis.php',
-                type: 'post',
-                data: {},
-                success: function (e) {
-                    var obj = JSON.parse(e);
-                    console.log(obj);
-                    var str = '';
-                    for (var i in obj) {
-                        str += `<tr>
-                    <td>${obj[i].discipline_addtime}</td>
-                    <td>${obj[i].student_name}</td>
-                    <td>纪律分数${obj[i].discipline_score}</td>
-                    <td>${obj[i].class_name}</td>
-                    <td>${obj[i].staff_name}</td>
-                    <td>${obj[i].dis_type_name}</td>
-                    <td>${obj[i].discipline_time}</td>
-                    <td>${obj[i].student_sponsor}</td>
-                    <td>${obj[i].discipline_bz}</td>
-                </tr>`;
-                    }
-                    $('#r_fbox_dis').html(str);
-                },
-                error() {
-                    console.log('error');
-                }
-            })
-        });
-
-        //班级管理
-        $(".lessons3").on("click", function () {
-            $(".rongrui").hide();
-            $(".ruixin").show();
-            $(".zhangyu1").hide();
-            $(".zhangyu2").hide();
-            $(".hanwen2").hide();
-            $(".hanwen1").hide();
-            $(".r_class").on("click", function () {
-                $(".title1").show();
-                $(".title2").hide();
-
-<<<<<<< HEAD
     });
+
+    function f_del(e, b) {
+        //    console.log(e);
+
+        layer.confirm('确认删除', {
+            btn: ['确认', '取消'] //按钮
+        }, function () {
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: 'f_del',
+                    d: e
+                },
+                success: function (e) {
+                    $.ajax({
+                        url: './../MVC/index.php',
+                        type: 'post',
+                        data: {
+                            c: 'fan',
+                            a: 'f_seleall',
+                        },
+                        success: function (e) {
+                            // fun = 'cor';
+                            var res = JSON.parse(e);
+                            // console.log(res);
+                            $('.f_conten').html('');
+                            for (var i in res) {
+                                $('.f_conten').prepend(`<tr>
+                        <td>${res[i].start_end_time}</td>
+                        <td>${res[i].employment_data}</td>
+                        <td>${res[i].class_name}</td>
+                        <td>${res[i].campu_courses}</td>
+                        <td>${res[i].classroom}</td>
+                        <td>${res[i].staff_name}</td>
+                        <td>${res[i].progress}</td>
+                        <td>${res[i].course_state_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del(${res[i].class_details_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+                        </td>
+                        
+                    </tr>`)
+                            }
+                        }
+                    });
+                }
+            })
+            layer.msg('删除成功', {
+                time: 1000, //20s后自动关闭
+            });
+        });
+
+
+    }
+
+    function f_updata(e) {
+        f_type = 1;
+        f_upid = e;
+        $('.fan_fram').show();
+        $('.stat1').val('')
+        $('.stat2').val('')
+        $('.cours1').val('')
+        $('.cours2').val('')
+        $('.cours3').val('')
+
+        $.ajax({
+            url: './../MVC/index.php',
+            type: 'post',
+            data: {
+                c: 'fan',
+                a: 'f_updata',
+                d: e
+            }, success: function (e) {
+                var arr = JSON.parse(e);
+                // console.log(arr);
+                $('.clas1').html('');
+                $('.clas2').html('');
+                $('.clas3').html('');
+                for (var i in arr[0]) {
+                    var f_sel = arr[0][i].class_id == arr[3][0].class_id ? 'selected' : '';
+                    $('.clas1').append(`<option value="${arr[0][i].class_id}" ${f_sel}>${arr[0][i].class_name}</option>`)
+                }
+                for (var i in arr[1]) {
+                    var f_sel1 = arr[1][i].staff_id == arr[3][0].staff_id ? 'selected' : '';
+                    $('.clas2').append(`<option value="${arr[1][i].staff_id}" ${f_sel1}>${arr[1][i].staff_name}</option>`)
+                }
+                for (var i in arr[2]) {
+                    var f_sel2 = arr[2][i].course_state_id == arr[3][0].course_state_id ? 'selected' : '';
+                    $('.clas3').append(`<option value="${arr[2][i].course_state_id}" ${f_sel2}>${arr[2][i].course_state_name}</option>`)
+                }
+                // debugger
+                f_call1 = $('.clas1').val()
+                f_call2 = $('.clas2').val()
+                f_call3 = $('.clas3').val()
+                $('.stat1').val(`${arr[3][0].start_end_time}`)
+                $('.stat2').val(`${arr[3][0].employment_data}`)
+                $('.cours1').val(`${arr[3][0].campu_courses}`)
+                $('.cours2').val(`${arr[3][0].classroom}`)
+                $('.cours3').val(`${arr[3][0].progress}`)
+            }
+        })
+    }
+
+    function f_del1(e, b) {
+        //    console.log(e);
+
+        layer.confirm('确认删除', {
+            btn: ['确认', '取消'] //按钮
+        }, function () {
+            $.ajax({
+                url: './../MVC/index.php',
+                type: 'post',
+                data: {
+                    c: 'fan',
+                    a: 'f_del1',
+                    d: e
+                },
+                success: function (e) {
+                    $.ajax({
+                        url: './../MVC/index.php',
+                        type: 'post',
+                        data: {
+                            c: 'fan',
+                            a: 'f_seleall1',
+                        },
+                        success: function (e) {
+                            // fun = 'cor';
+                            var res = JSON.parse(e);
+                            // console.log(res);
+                            $('.f_conten').html('');
+                            for (var i in res) {
+                                $('.f_conten').prepend(`<tr>
+                        <td>${res[i].course_name}</td>
+                        <td>${res[i].course_coding}</td>
+                        <td>${res[i].course_category}</td>
+                        <td>${res[i].course_campus}</td>
+                        <td>${res[i].course_plan}</td>
+                        <td>${res[i].course_duration}</td>
+                        <td>${res[i].course_price}</td>
+                        <td>${res[i].class_course_name}</td>
+                        <td>
+                        <div class="layui-btn-group">
+
+  <button type="button" class="f_updata layui-btn layui-btn-sm" onclick='f_updata1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe642;</i>
+  </button>
+  <button type="button" class="f_del layui-btn layui-btn-sm" onclick='f_del1(${res[i].course_id},"${fun}")'>
+    <i class="layui-icon">&#xe640;</i>
+  </button>
+
+</div>
+   
+                    </td></tr>`)
+                            }
+                        }
+                    });
+                }
+            })
+            layer.msg('删除成功', {
+                time: 1000, //20s后自动关闭
+            });
+        });
+
+
+    }
+
+    function f_updata1(e) {
+        f_type = 1;
+        f_upid = e;
+        $('.fan_fram1').show();
+        $('.f_in1').val('')
+        $('.f_in2').val('')
+        $('.f_in3').val('')
+        $('.f_in4').val('')
+        $('.f_in5').val('')
+        $('.f_in6').val('')
+        $('.f_in7').val('')
+
+        $.ajax({
+            url: './../MVC/index.php',
+            type: 'post',
+            data: {
+                c: 'fan',
+                a: 'f_updata1',
+                d: e,
+            },
+            success: function (e) {
+                var arr = JSON.parse(e);
+                $('.f_in8').html('');
+
+                for (var i in arr[0]) {
+                    var f_sel = arr[0][i].class_course_id == arr[1][0].class_course_id ? 'selected' : '';
+                    $('.f_in8').append(`<option value="${arr[0][i].class_course_id}" ${f_sel}>${arr[0][i].class_course_name}</option>`)
+                }
+                f_call4 = $('.f_in8').val()
+                $('.f_in1').val(`${arr[1][0].course_name}`)
+                $('.f_in2').val(`${arr[1][0].course_coding}`)
+                $('.f_in3').val(`${arr[1][0].course_category}`)
+                $('.f_in4').val(`${arr[1][0].course_campus}`)
+                $('.f_in5').val(`${arr[1][0].course_plan}`)
+                $('.f_in6').val(`${arr[1][0].course_duration}`)
+                $('.f_in7').val(`${arr[1][0].course_price}`)
+            }
+
+        })
+
+    }
+
     //考勤管理
     $(".lessons4").on("click", function () {
         $(".rongrui").hide();
@@ -810,6 +1349,8 @@
         $(".zhangyu2").hide();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
+        $('.fan_fram1').hide();
+        $('.fan_fram').hide();
 
     });
     //租赁管理
@@ -820,6 +1361,8 @@
         $(".zhangyu2").show();
         $(".hanwen2").hide();
         $(".hanwen1").hide();
+        $('.fan_fram1').hide();
+        $('.fan_fram').hide();
 
     });
     //员工管理
@@ -830,52 +1373,11 @@
         $(".zhangyu2").hide();
         $(".hanwen2").show();
         $(".hanwen1").hide();
+        $('.fan_fram1').hide();
+        $('.fan_fram').hide();
 
     });
-
-
 </script>
-=======
-            });
-            $(".r_course").on("click", function () {
-                $(".title1").hide();
-                $(".title2").show();
-
-            });
-
-        });
-        //考勤管理
-        $(".lessons4").on("click", function () {
-            $(".rongrui").hide();
-            $(".ruixin").hide();
-            $(".zhangyu1").show();
-            $(".zhangyu2").hide();
-            $(".hanwen2").hide();
-            $(".hanwen1").hide();
-
-        });
-        //租赁管理
-        $(".lessons5").on("click", function () {
-            $(".rongrui").hide();
-            $(".ruixin").hide();
-            $(".zhangyu1").hide();
-            $(".zhangyu2").show();
-            $(".hanwen2").hide();
-            $(".hanwen1").hide();
-
-        });
-        //员工管理
-        $(".lessons6").on("click", function () {
-            $(".rongrui").hide();
-            $(".ruixin").hide();
-            $(".zhangyu1").hide();
-            $(".zhangyu2").hide();
-            $(".hanwen2").show();
-            $(".hanwen1").hide();
-
-        });
-    </script>
->>>>>>> f4928213ab5f4ef2bdcd146dd9ea90d9e68ad8f2
 </body>
 
 </html>
